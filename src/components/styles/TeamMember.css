@@ -1,0 +1,38 @@
+.teamMember {
+  height: 375px;
+  width: 30vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid lightgray;
+}
+
+.teamMember > img {
+  height: 50vh;
+  width: 100%;
+  border-bottom: 4px solid #13abe6;
+}
+
+.teamMember > h3 {
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+
+.teamMember > p {
+  padding-top: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 900px) {
+  .teamMember {
+    width: 40vw;
+    height: 325px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .teamMember {
+    width: 70vw;
+  }
+}

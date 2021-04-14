@@ -1,0 +1,79 @@
+.team {
+  margin-top: 3rem;
+  background: #f7f7f7;
+}
+
+.team__titleCard {
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-position: center;
+  background-size: cover;
+}
+
+.team__titleCard > div {
+  display: block;
+  margin: 2rem auto;
+  text-align: center;
+  position: relative;
+  top: 35%;
+  background: rgba(255, 255, 255, 0.1);
+  width: 30vw;
+  padding: 40px 0;
+}
+
+.team__titleCard > div > h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.team__introText {
+  padding: 4rem;
+}
+
+.team__introText > h2 {
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.team__introText > p {
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.team__members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 4rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.team__members > * {
+  margin: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .team__titleCard > div {
+    top: 25%;
+    margin: 0 auto;
+    width: 50vw;
+  }
+
+  .team__introText {
+    padding: 2rem 3rem;
+  }
+
+  .team__members {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .team__members {
+    grid-template-columns: 1fr;
+  }
+}

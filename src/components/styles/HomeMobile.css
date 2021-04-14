@@ -1,0 +1,234 @@
+@media only screen and (max-width: 1080px) {
+  /* Mission Statement */
+  .home__missionStatementText {
+    padding-top: 5rem;
+  }
+
+  .home__contactForm {
+    padding-top: 0.5rem;
+  }
+
+  .home__contactFormButton {
+    width: 8rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home {
+    width: 100%;
+  }
+
+  /* Landing */
+  .home__landing {
+    padding: 2rem;
+  }
+
+  .home__landing > h1 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .home__landing > p {
+    font-size: 0.9rem;
+  }
+
+  .home__landing > button,
+  .home__servicesExploreButton > button {
+    font-size: 0.85rem;
+    padding: 15px;
+  }
+
+  /* Mission Statement */
+  .home__missionStatement {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .home__missionStatementImage {
+    display: none;
+    padding: 0;
+  }
+
+  .home__missionStatementText {
+    padding: 0 3rem;
+  }
+
+  .home__missionStatementButton {
+    text-decoration: none;
+  }
+
+  .home__missionStatementButton > button,
+  .home__teamButton > button {
+    font-size: 0.9rem;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .home__customers {
+    display: none;
+  }
+
+  /* Services */
+  .home__services {
+    margin-top: 1rem;
+  }
+
+  .home__services > h2 {
+    font-size: 1.5rem;
+  }
+
+  .home__serviceContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .home__servicesExploreButton {
+    margin: 0;
+  }
+
+  /* Contact Form */
+  .home__contact {
+    flex-direction: column-reverse;
+    height: fit-content;
+    background-repeat: none;
+    background-size: cover;
+  }
+
+  .home__contactForm {
+    padding: 1rem;
+  }
+
+  .home__contactForm > form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__contactFormField {
+    margin: 10px;
+  }
+
+  .home__contactFormField > label {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .home__contactFormField > input {
+    height: 30px;
+    width: 100%;
+  }
+
+  .home__contactFormField > textarea {
+    width: 100%;
+  }
+
+  .home__contactFormButton {
+    display: block;
+    margin: 1rem auto;
+    font-size: 0.9rem;
+    padding: 15px 20px;
+  }
+
+  .home__contactActionStatement {
+    padding: 0;
+    width: 100%;
+    background: none;
+    color: #21295c;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .home__contactActionStatement > p {
+    display: none;
+  }
+
+  .home__contactActionStatement > h2 {
+    font-size: 1.5rem;
+    color: #21295c;
+  }
+
+  /* Testimonies */
+  .home__testimoniesHeader > h2 {
+    font-size: 1.5rem;
+  }
+
+  .home__testimoniesCards {
+    flex-direction: column;
+    padding: 2rem 3rem;
+  }
+
+  .home__testimoniesCard {
+    height: 275px;
+  }
+
+  /* Team */
+  .home__team {
+    height: 150vh;
+  }
+
+  .home__teamHeader {
+    padding: 2rem;
+  }
+
+  .home__teamMembers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+
+  .home__teamMember {
+    margin: 20px;
+    padding: 0;
+  }
+
+  .home__teamMember > img {
+    height: 200px;
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Landing */
+  .home__landing > h1 {
+    font-size: 1.5rem;
+  }
+
+  .home__landing > p {
+    display: none;
+  }
+
+  /* Mission Statement */
+  .home__missionStatementText {
+    padding: 0 3rem;
+  }
+
+  /* Donation */
+  .home__donationFormField > input,
+  .home__donationFormField > textarea {
+    width: 70%;
+  }
+
+  .home__testimoniesCard > p {
+    padding: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .home__testimoniesCard > img {
+    display: none;
+  }
+
+  /* Team */
+  .home__team {
+    height: 150vh;
+  }
+
+  .home__teamMember > img {
+    height: 175px;
+    width: 200px;
+  }
+
+  .home__teamButton {
+    padding: 10px;
+  }
+}

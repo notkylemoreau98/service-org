@@ -1,0 +1,170 @@
+.contact {
+  margin-top: 3rem;
+  background: #fff;
+}
+
+.contact__titleCard {
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("https://images.pexels.com/photos/6647035/pexels-photo-6647035.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-position: center;
+  background-size: cover;
+}
+
+.contact__titleCard > div {
+  display: block;
+  margin: 2rem auto;
+  text-align: center;
+  position: relative;
+  top: 35%;
+  background: rgba(255, 255, 255, 0.1);
+  width: 30vw;
+  padding: 40px 0;
+}
+
+.contact__titleCard > div > h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.contact__heading {
+  padding-left: 4rem;
+  padding-top: 2rem;
+}
+
+.contact__heading > p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 4rem;
+}
+
+.contact__left {
+  flex: 0.6;
+}
+
+.contact__formItem {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.contact__formItem > label {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.contact__formItem > input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding-left: 0.5rem;
+}
+
+.contact__formItem > textarea {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 0.75rem;
+}
+
+.contact__formItem > p {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+#contact__formItemTop {
+  padding-top: 0;
+}
+
+.contact__formButton {
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 30px;
+  padding: 15px 30px;
+  color: #fff;
+  background: #13abe6;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.contact__formButton:hover {
+  background: #f9a620;
+}
+
+.contact__right {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: fit-content;
+  padding: 3rem;
+  background: #e5e7eb;
+}
+
+.contact__right > h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.contact__right > p {
+  margin: 20px 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.contact__infoItem {
+  margin: 10px 0;
+}
+
+.contact__infoItem > h3 {
+  color: #21295c;
+  font-size: 1.3rem;
+}
+
+.contact__infoSubtitle {
+  display: flex;
+  align-items: center;
+  margin: 10px 5px;
+}
+
+.contact__subtitleIcon {
+  color: #21295c;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .contact__titleCard > div {
+    top: 25%;
+    margin: 0 auto;
+    width: 50vw;
+  }
+
+  .contact__heading {
+    padding-left: 2rem;
+  }
+
+  .contact__left {
+    flex: 1;
+  }
+
+  .contact__container {
+    padding: 2rem;
+  }
+
+  .contact__right {
+    display: none;
+  }
+}

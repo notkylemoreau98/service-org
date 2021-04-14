@@ -1,0 +1,156 @@
+.modal__container {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal {
+  width: 800px;
+  height: 500px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background: #f7f7f7;
+  color: #21295c;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 101;
+  border-radius: 10px;
+}
+
+.modal__close {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+.modal__image {
+  flex: 0.5;
+}
+
+.modal__image > img {
+  width: 400px;
+  height: 500px;
+  border-radius: 5px;
+  background: #21295c;
+}
+
+.modal__content {
+  padding-top: 3rem;
+  flex: 0.5;
+  padding: 20px 1rem;
+}
+
+.modal__content > h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.modal__contentForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.modal__contentForm > input {
+  height: 40px;
+  outline: none;
+  border: 1px solid lightgray;
+  margin: 3px;
+  padding-left: 5px;
+}
+
+.modal__contentForm > button {
+  cursor: pointer;
+  height: 40px;
+  margin-top: 20px;
+  transition: all 0.3s;
+}
+
+.modal__contentForm > button:hover {
+  opacity: 0.8;
+}
+
+.modal__cardElement {
+  margin: 15px 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .modal {
+    width: 600px;
+    height: 350px;
+  }
+
+  .modal__close {
+    font-size: 1.25rem;
+  }
+
+  .modal__content > h1 {
+    padding-top: 1.25rem;
+  }
+
+  .modal__contentForm > input {
+    height: 35px;
+  }
+
+  .modal__image > img {
+    width: 300px;
+    height: 350px;
+  }
+
+  .modal__priceContainer > h3 {
+    font-size: 1rem;
+  }
+
+  .modal__contentForm > button {
+    height: 35px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .modal {
+    width: 400px;
+    height: 325px;
+  }
+
+  .modal__close {
+    font-size: 1.1rem;
+  }
+
+  .modal__content {
+    flex: 1;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .modal__content > h1 {
+    padding-top: 0;
+  }
+
+  .modal__contentForm > input {
+    height: 30px;
+  }
+
+  .modal__image {
+    flex: 0;
+  }
+
+  .modal__image > img {
+    display: none;
+  }
+
+  .modal__contentForm > button {
+    height: 30px;
+  }
+}

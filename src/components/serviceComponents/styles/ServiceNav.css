@@ -1,0 +1,56 @@
+.serviceNav {
+  background: #fff;
+  width: 450px;
+  padding: 3rem 2rem 3rem 4rem;
+}
+
+.serviceNav > ul {
+  width: 400px;
+}
+
+.serviceNav__link {
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  color: #21295c;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.3s;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.serviceNav__link:hover {
+  color: #f9a620;
+}
+
+.serviceNav__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.75rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .serviceNav {
+    padding: 1rem;
+    width: 80%;
+  }
+
+  .serviceNav > ul {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .serviceNav {
+    width: 100%;
+  }
+
+  .serviceNav > ul {
+    width: 100%;
+  }
+}

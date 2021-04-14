@@ -1,0 +1,85 @@
+.transportation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+  background: #fff;
+  width: 850px;
+}
+
+.transportation__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+
+.transportation__image > img {
+  height: 400px;
+  width: 700px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.transportation__title > h1 {
+  margin: 15px auto;
+  color: #21295c;
+}
+
+.transportation__title > p {
+  line-height: 1.75rem;
+  font-size: 0.9rem;
+}
+
+.transportation__list {
+  margin-top: 1.75rem;
+}
+
+.transportation__list > ul {
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+}
+
+.transportation__list > ul > li {
+  margin: 15px;
+  font-size: 0.9rem;
+}
+
+.transportation__missionStatement {
+  margin-top: 4rem;
+  line-height: 1.75rem;
+}
+
+.transportation__missionStatement > h3 {
+  font-size: 1.3rem;
+  color: #21295c;
+}
+
+.transportation__missionStatement > p {
+  font-size: 0.85rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .transportation {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  .transportation__container {
+    padding: 2rem;
+  }
+
+  .transportation__image > img {
+    width: 90vw;
+    height: 75vh;
+  }
+
+  .transportation__missionStatement {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .transportation__image > img {
+    height: 60vh;
+  }
+}
