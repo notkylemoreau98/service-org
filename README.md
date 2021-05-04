@@ -1,4 +1,4 @@
-# Urban Touch eCommerce Store Prototype
+# Partners in Health Charity Website
 
 ## Description
 
