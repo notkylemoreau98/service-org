@@ -1,6 +1,28 @@
-# Getting Started with Create React App
+# Urban Touch eCommerce Store Prototype
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+
+This application is an example of a potential website overhaul for a charitable organzation. The project is built in React and utilizes Google's Firebase technology as well as the Stripe payment API. Users can enter there information into a contact form which is validated before being sent off to a Firestore database. Users can also access a donation modal on any page of the website that uses Stripe to process user payments.
+
+View live site here: https://www.pihtribute.com/ 
+
+## Purpose
+I decided to create this project after I read the novel "Mountains Beyond Mountains" by Tracy Kidder. I was extremely interested in the work of the Partners in Health charity and decided to create a sort of redesign for their website. The website design is based off of another personal project I found online that can be found here at https://concordehaiti.com/. I used this project as real world practice for recreating a given design with my own code and added to the original design by making a responsive mobile version as well as integrating payment into the website.. 
+
+## Technologies
+
+React Hooks: useState, useEffect, useRef, Custom useContact Hook
+
+React Packages: React-router, react-currency-format
+
+Google's Firebase(NoSQL database program): Firestore Database to save submitted contact fields 
+
+Material-Ui: Used for the icons on the website
+
+Stripe API: Used for payment processing
+
+Node.js: Simple express server create to assist with Stripe payments
+
 
 ## Available Scripts
 
@@ -67,4 +89,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-
+app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
