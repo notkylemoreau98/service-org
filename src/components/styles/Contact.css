@@ -146,6 +146,10 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .contact__titleCard {
+    height: 45vh;
+  }
+
   .contact__titleCard > div {
     top: 25%;
     margin: 0 auto;
@@ -166,5 +170,11 @@
 
   .contact__right {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact__titleCard {
+    height: 35vh;
   }
 }

@@ -22,6 +22,7 @@
   /* Landing */
   .home__landing {
     padding: 2rem;
+    padding-bottom: 0;
   }
 
   .home__landing > h1 {
@@ -188,8 +189,12 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   /* Landing */
+  .home__landing {
+    height: 60vh;
+  }
+
   .home__landing > h1 {
     font-size: 1.5rem;
   }
@@ -199,14 +204,30 @@
   }
 
   /* Mission Statement */
+  .home__missionStatement {
+    height: fit-content;
+    margin-top: 1rem;
+  }
+
   .home__missionStatementText {
     padding: 0 3rem;
+  }
+
+  /* Services */
+  .home__services {
+    height: fit-content;
+    margin-top: 3rem;
   }
 
   /* Donation */
   .home__donationFormField > input,
   .home__donationFormField > textarea {
     width: 70%;
+  }
+
+  .home__testimoniesCard {
+    height: fit-content;
+    width: 80vw;
   }
 
   .home__testimoniesCard > p {
@@ -220,12 +241,12 @@
 
   /* Team */
   .home__team {
-    height: 150vh;
+    height: fit-content;
   }
 
   .home__teamMember > img {
     height: 175px;
-    width: 200px;
+    width: 190px;
   }
 
   .home__teamButton {

@@ -53,7 +53,6 @@
 
 .home_landing .home__modal {
   position: absolute;
-  /* Modal is still behind header */
   z-index: 9999;
 }
 

@@ -10,7 +10,7 @@
   top: 0;
   width: 100%;
   height: 12vh;
-  z-index: 1;
+  z-index: 10;
 }
 
 .header__title {
@@ -65,7 +65,7 @@
   cursor: pointer;
 }
 
-.header__nav > .header__donationButton > button {
+.header__nav > .header__donationButton button {
   cursor: pointer;
   background: #13abe6;
   color: #fff;
@@ -74,43 +74,41 @@
   font-size: 1rem;
 }
 
-.header__mobile {
+.header__mobileNav {
+  height: 15vh;
   display: none;
 }
 
-.header__mobileIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5px;
-  transform: scale(1.25);
-  color: #21295c;
-}
-
-.header__mobileNav {
-  position: fixed;
-  background: #fff;
-  z-index: 10;
-  width: 100vw;
-  height: fit-content;
-  top: 4rem;
-  padding-left: 4rem;
-  left: -120%;
-  transition: all 0.75s;
-}
-
-.header__mobileNav.active {
-  left: 0;
-  transition: all 0.5s;
-}
-
-.header__mobileNav > ul {
+.header__mobileNav ul {
   list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
+.header__mobileNav li {
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.header__mobileNav button {
+  cursor: pointer;
+  width: 100%;
+  background: #21295c;
+  color: #fff;
+  border: 1px solid #000;
+  outline: none;
 }
 
 @media only screen and (max-width: 900px) {
   .header {
-    padding: 10px 2rem;
+    padding: 10px 1rem;
   }
 
   .header__title {
@@ -122,15 +120,18 @@
     display: none;
   }
 
-  .header__mobile {
+  .header__mobileNav {
     display: flex;
   }
+}
 
-  .header__mobileNav {
-    top: 3rem;
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 8vh;
   }
 
-  .header__mobileNav .header__navLink {
-    font-size: 1rem;
+  .header__title {
+    flex: 1;
+    font-size: 0.75rem;
   }
 }

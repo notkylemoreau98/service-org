@@ -34,6 +34,10 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .services__titleCard {
+    height: 45vh;
+  }
+
   .services__titleCard > div {
     top: 25%;
     margin: 0 auto;
@@ -47,11 +51,15 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
+  .services__titleCard {
+    height: 35vh;
+  }
+
   .services__container {
     display: flex;
     flex-direction: column;
     height: fit-content;
-    padding: 1rem 3rem;
+    padding: 1rem;
   }
 }

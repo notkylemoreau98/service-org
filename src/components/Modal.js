@@ -5,7 +5,6 @@ import { useHistory } from 'react-router-dom';
 import axios from './axios'
 import CurrencyFormat from 'react-currency-format';
 
-// Form validation???
 
 export const Modal = ({modal, setModal}) => {
 	const [succeeded, setSucceeded] = useState(false);
@@ -32,10 +31,10 @@ export const Modal = ({modal, setModal}) => {
 		};
 
 		getClientSecret();
+		console.log(clientSecret);
 
 	}, [donationAmount])
 
-	console.log(clientSecret);
 	
 	const closeModal = (e) => {
 		if(modalRef.current === e.target) {

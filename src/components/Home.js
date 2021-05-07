@@ -12,11 +12,6 @@ import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 
-// FINAL LIST
-// Form validation (Even modal)
-// Deploy
-// DONE
-
 const promise = loadStripe("pk_test_51ISAxtHJNiQVOCCAFB9H8O89lSXoKxTiWvi74pglcDmUePobnGna59BzdcFpBiktaVL6BM7paj5fh1IrLkVTxc3x006yKenkUR");
 
 function Home() {

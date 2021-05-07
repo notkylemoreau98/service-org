@@ -90,6 +90,7 @@
   .modal {
     width: 600px;
     height: 350px;
+    justify-content: space-evenly;
   }
 
   .modal__close {
@@ -151,6 +152,7 @@
   }
 
   .modal__contentForm > button {
-    height: 30px;
+    height: 40px;
+    border-radius: 0px;
   }
 }

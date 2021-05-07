@@ -5,6 +5,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h2 {
   color: #21295c;
 }

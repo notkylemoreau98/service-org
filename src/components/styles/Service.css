@@ -91,9 +91,10 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .service {
     height: 275px;
+    width: 85vw;
   }
 
   .service__icon {

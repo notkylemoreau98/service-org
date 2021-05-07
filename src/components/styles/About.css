@@ -62,6 +62,10 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .about__titleCard {
+    height: 45vh;
+  }
+
   .about__titleCard > div {
     top: 25%;
     margin: 0 auto;
@@ -79,5 +83,17 @@
   .about__topContainerImage > img {
     padding: 0;
     margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about__titleCard {
+    height: 35vh;
+  }
+
+  .about__topContainerImage > img,
+  .about__bottomContainerImage > img {
+    width: 100vw;
+    height: 40vh;
   }
 }

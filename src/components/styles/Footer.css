@@ -25,6 +25,7 @@
   height: 45px;
   width: 70%;
   border: none;
+  border-radius: 0px;
   outline: none;
   padding-left: 10px;
   opacity: 0.9;
@@ -109,15 +110,15 @@
     display: block;
   }
 
-  .footer__links > ul {
+  .footer__links ul {
     display: flex;
     justify-content: space-around;
     padding-top: 10px;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .footer__newsletter > form > input {
-    width: 80%;
+@media only screen and (max-width: 600px) {
+  .footer__newsletter input {
+    width: 75%;
   }
 }
