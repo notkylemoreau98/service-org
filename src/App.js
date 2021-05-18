@@ -15,6 +15,9 @@ import Team from './components/Team';
 import Contact from './components/Contact';
 import DonationCheckout from './components/DonationCheckout';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { loadStripe } from '@stripe/stripe-js';
+
+const stripePromise = loadStripe('pk_test_51ISAxtHJNiQVOCCAFB9H8O89lSXoKxTiWvi74pglcDmUePobnGna59BzdcFpBiktaVL6BM7paj5fh1IrLkVTxc3x006yKenkUR')
 
 // To-do
 // - Double check form validation

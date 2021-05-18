@@ -7,8 +7,10 @@ function TeamMember({ image, name, role}) {
 			<img src={image} alt={name} />
 
 			<div className="teamMember__accentLine"></div>
-					<h3>{name}</h3>
-					<p>{role}</p>
+			
+			<h3>{name}</h3>
+			<p>{role}</p>
+			
 		</div>
 	)
 }

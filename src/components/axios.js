@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-	baseURL: 'https://www.pihtribute.com/'
+	baseURL: 'https://us-central1-service-org.cloudfunctions.net/api'
 })
 
 export default instance;

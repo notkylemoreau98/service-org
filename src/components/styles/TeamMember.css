@@ -16,7 +16,7 @@
 
 .teamMember > h3 {
   font-size: 1.5rem;
-  padding-top: 10px;
+  padding-top: 2rem;
 }
 
 .teamMember > p {
@@ -28,6 +28,10 @@
   .teamMember {
     width: 40vw;
     height: fit-content;
+  }
+
+  .teamMember > h3 {
+    padding-top: 10px;
   }
 }
 
