@@ -12,7 +12,7 @@ Zipcode: 24242
 
 This application is an example of a potential website overhaul for a charitable organzation. The project is built in React and utilizes Google's Firebase technology as well as the Stripe payment API. Users can enter there information into a contact form which is validated before being sent off to a Firestore database. Users can also access a donation modal on any page of the website that uses Stripe to process user payments.
 
-View live site here: https://www.pihtribute.com/
+View live site here: https://service-org.web.app/
 
 ## Purpose
 
