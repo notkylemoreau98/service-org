@@ -4,7 +4,6 @@
   width: 100vw;
 }
 
-/* Landing */
 .home__landing {
   display: flex;
   flex-direction: column;
@@ -12,7 +11,7 @@
   align-items: center;
   height: 85vh;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("https://images.pexels.com/photos/6794247/pexels-photo-6794247.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    url("./images/home-landing-background.jpeg");
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -33,8 +32,7 @@
   margin: 10px;
 }
 
-.home__landing > button,
-.home__servicesExploreButton > button {
+.home__landing > button {
   cursor: pointer;
   font-size: 1rem;
   margin: 20px;
@@ -56,349 +54,42 @@
   z-index: 9999;
 }
 
-/* Mission Statement */
-.home__missionStatement {
-  height: 90vh;
-  display: flex;
-  align-items: center;
+@media only screen and (max-width: 900px) {
+  .home {
+    width: 100%;
+  }
+
+  .home__landing {
+    padding: 2rem;
+    padding-bottom: 0;
+  }
+
+  .home__landing > h1 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .home__landing > p {
+    font-size: 0.9rem;
+  }
+
+  .home__landing > button {
+    font-size: 0.85rem;
+    padding: 15px;
+  }
 }
 
-.home__missionStatementImage {
-  padding: 2rem 2rem 2rem 4rem;
-}
+@media only screen and (max-width: 600px) {
+  .home__landing {
+    height: 50vh;
+  }
 
-.home__missionStatementImage > img {
-  height: 70vh;
-  border-radius: 2px;
-}
+  .home__landing > h1 {
+    font-size: 1.75rem;
+    margin-top: 0;
+  }
 
-.home__missionStatementText {
-  display: flex;
-  flex-direction: column;
-  padding: 0 5rem 3rem 0;
-}
-
-.home__missionStatementText > span {
-  font-size: 1.5rem;
-}
-
-.home__missionStatementText > h2 {
-  font-size: 1.75rem;
-  font-weight: 600;
-}
-
-.home__missionStatementText > p {
-  line-height: 25px;
-  font-size: 0.9rem;
-}
-
-.home__missionStatementText .home__missionStatementTitleUnderline {
-  height: 4px;
-  width: 5rem;
-  background: #f9a620;
-  margin-bottom: 1.5rem;
-}
-
-.home__missionStatementButton > button,
-.home__teamButton > button {
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 30px;
-  padding: 15px;
-  color: #fff;
-  background: #21295c;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  transition: all 0.3s;
-}
-
-.home__missionStatementButton > button:hover,
-.home__teamButton > button:hover {
-  background: #f9a620;
-}
-
-/* Customers */
-.home__customers {
-  margin: 1rem 0;
-}
-
-.home__customers > h2 {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.home__customersImages {
-  background: #e6e6e6;
-  height: 30vh;
-  padding: 0 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.home__customersImages > img {
-  height: 22.5vh;
-  width: 150px;
-}
-
-/* Services */
-.home__services {
-  margin-top: 4rem;
-}
-
-.home__services > h2 {
-  font-size: 1.75rem;
-  text-align: center;
-}
-
-.home__serviceContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: center;
-  margin: 10px 3rem;
-}
-
-.home__servicesExploreButton {
-  /* Rest of styles in the landing section */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  margin: 3.5rem;
-}
-
-.home__servicesExploreButton > button:hover {
-  background: #21295c;
-  color: #fff;
-}
-
-/* Contact */
-.home__contact {
-  height: 95vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home__contactForm {
-  flex: 0.7;
-  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-    url("https://images.pexels.com/photos/2386594/pexels-photo-2386594.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  padding: 4rem 5rem 3rem 5rem;
-}
-
-.home__contactForm > form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.home__contactFormField {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 20px;
-}
-
-.home__contactFormField > label {
-  color: #fff;
-  margin-bottom: 1rem;
-}
-
-.home__contactFormField > input {
-  height: 35px;
-  padding: 10px;
-  width: 100%;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  opacity: 0.75;
-}
-
-.home__contactFormField > p {
-  color: red;
-  font-size: 0.85rem;
-  margin-top: 5px;
-}
-
-.home__contactFormField > input:focus,
-#home__contactFormMessage > textarea:focus {
-  border: 2px solid #a7a7a7;
-  opacity: 1;
-}
-
-#home__contactFormMessage {
-  grid-column: 1 / -1;
-}
-
-#home__contactFormMessage > textarea {
-  border-radius: 5px;
-  opacity: 0.75;
-}
-
-.home__contactFormButton {
-  grid-column: 1 / -1;
-  cursor: pointer;
-  margin: 1rem 18rem 2rem 18rem;
-  padding: 15px;
-  border-radius: 5px;
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f9a620;
-  color: #fff;
-  border: none;
-  outline: none;
-  transition: all 0.3s;
-}
-
-.home__contactFormButton:hover {
-  background: #21295c;
-}
-
-.home__contactActionStatement {
-  flex: 0.3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #13abe6;
-  color: #fff;
-  height: 100%;
-  padding: 2rem;
-}
-
-.home__contactActionStatement > p {
-  padding-top: 2rem;
-}
-
-.home__contactActionStatement > h2 {
-  font-size: 2rem;
-  padding-top: 1.5rem;
-  color: #fff;
-}
-
-/* Testimonies */
-.home__testimonies {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 3rem;
-}
-
-.home__testimoniesHeader {
-  text-align: center;
-}
-
-.home__testimoniesHeader > h2 {
-  font-size: 1.75rem;
-}
-
-.home__testimoniesCards {
-  display: flex;
-  padding: 4rem;
-}
-
-.home__testimoniesCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  margin: 10px;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
-  height: 400px;
-  transition: all 0.3s;
-}
-
-.home__testimoniesCard > p {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.home__testimoniesCard > img {
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  margin-top: 2rem;
-}
-
-#home__testimoniesCardAlt {
-  background: #13abe6;
-  color: #fff;
-}
-
-#home__testimoniesCardAlt > p {
-  color: rgba(255, 255, 255, 0.9);
-}
-
-/* Team */
-.home__team {
-  height: 110vh;
-  background: #fff;
-}
-
-.home__teamHeader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 4rem;
-  font-size: 1.25rem;
-}
-
-.home__teamHeaderUnderline {
-  background: #13abe6;
-  height: 4px;
-  width: 5rem;
-}
-
-.home__teamMembers {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0 4rem;
-}
-
-.home__teamMember {
-  text-align: center;
-}
-
-.home__teamMember > img {
-  height: 240px;
-  width: 260px;
-  border-radius: 50%;
-  padding: 0 10px;
-}
-
-.home__teamMember > h3 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.home__teamMember > p {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.home__teamButton {
-  /* Styles in mission button section */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  text-decoration: none;
-}
-
-.home__teamButton > button {
-  color: white;
-  padding: 15px 30px;
+  .home__landing > p {
+    display: none;
+  }
 }

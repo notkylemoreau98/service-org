@@ -8,12 +8,14 @@ const app = express();
 app.use(cors({ origin: true }));
 app.use(express.json());
 
+exports.handler = ((req, res) => {
+    res.set({ 'Access-Control-Allow-Origin': '*' }).sendStatus(200)
+})
+
 app.get('/', (request, response) => response.status(200).send('Partners in Health'));
 
 app.post('/payments/create', async (request, response) => {
 	const total = request.query.total;
-
-	console.log('Payment Request Received', total);
 
 	const paymentIntent = await stripe.paymentIntents.create({
 		amount: total,

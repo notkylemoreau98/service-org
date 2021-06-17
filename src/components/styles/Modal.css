@@ -119,14 +119,14 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .modal {
     width: 400px;
-    height: 325px;
+    height: fit-content;
   }
 
   .modal__close {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
 
   .modal__content {
@@ -140,7 +140,8 @@
   }
 
   .modal__contentForm > input {
-    height: 30px;
+    height: 45px;
+    margin: 0.375rem 0;
   }
 
   .modal__image {
@@ -152,7 +153,11 @@
   }
 
   .modal__contentForm > button {
-    height: 40px;
+    height: 45px;
     border-radius: 0px;
+  }
+
+  .modal__cardElement {
+    margin: 20px 0;
   }
 }

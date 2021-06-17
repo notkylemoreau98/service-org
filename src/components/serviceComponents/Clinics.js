@@ -2,6 +2,9 @@ import React from 'react';
 import './styles/Clinics.css';
 import ServiceNav from './ServiceNav';
 
+import clinicsImage from './styles/images/clinics.jpeg';
+
+
 function Clinics() {
 	return (
 		<div className="clinics">
@@ -10,7 +13,7 @@ function Clinics() {
 			<div className="clinics__container">
 
 				<div className="clinics__image">
-					<img src="https://images.pexels.com/photos/1170979/pexels-photo-1170979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Clinics Image"/>
+					<img src={clinicsImage} alt="Clinics Image"/>
 				</div>
 
 				<div className="clinics__textContainer">

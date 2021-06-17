@@ -1,0 +1,178 @@
+.contactHome {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactHome__form {
+  flex: 0.7;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url("./images/home-contact-image.jpeg");
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  padding: 1rem 5rem;
+}
+
+.contactHome__form > form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contactHome__formField {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
+.contactHome__formField > label {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.contactHome__formField > input {
+  height: 35px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  opacity: 0.75;
+}
+
+.contactHome__formField > p {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.contactHome__formField > input:focus,
+.contactHome__formMessage > textarea:focus {
+  border: 2px solid #a7a7a7;
+  opacity: 1;
+}
+
+.contactHome__formMessage {
+  grid-column: 1 / -1;
+}
+
+.contactHome__formMessage > textarea {
+  border-radius: 5px;
+  opacity: 0.75;
+}
+
+.contactHome__formButton {
+  grid-column: 1 / -1;
+  cursor: pointer;
+  margin: 1rem 18rem 2rem 18rem;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9a620;
+  color: #fff;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.contactHome__formButton:hover {
+  background: #21295c;
+}
+
+.contactHome__actionStatement {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #13abe6;
+  color: #fff;
+  height: 100%;
+  padding: 2rem;
+}
+
+.contactHome__actionStatement > p {
+  padding-top: 2rem;
+}
+
+.contactHome__actionStatement > h2 {
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1080px) {
+  .contactHome__form {
+    padding-top: 0.5rem;
+  }
+
+  .contactHome__formButton {
+    width: 8rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contactHome {
+    flex-direction: column-reverse;
+    height: fit-content;
+    background-repeat: none;
+    background-size: cover;
+  }
+
+  .contactHome__form {
+    padding: 1rem;
+  }
+
+  .contactHome__form > form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactHome__formField {
+    margin: 10px;
+  }
+
+  .contactHome__formField > label {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .contactHome__formField > input {
+    height: 30px;
+    width: 100%;
+  }
+
+  .contactHome__formField > textarea {
+    width: 100%;
+  }
+
+  .contactHome__formButton {
+    display: block;
+    margin: 1rem auto;
+    font-size: 0.9rem;
+    padding: 15px 20px;
+  }
+
+  .contactHome__actionStatement {
+    padding: 0;
+    width: 100%;
+    background: none;
+    color: #21295c;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .contactHome__actionStatement > p {
+    display: none;
+  }
+
+  .contactHome__actionStatement > h2 {
+    font-size: 1.5rem;
+    color: #21295c;
+  }
+}

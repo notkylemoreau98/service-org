@@ -2,6 +2,11 @@ import React from 'react';
 import './styles/Team.css';
 import TeamMember from './TeamMember';
 
+import {teamLindsay, teamLaura, teamJerald} from './homeComponents/TeamHome';
+import teamAaron from './styles/images/team-member-aaron.jpeg';
+import teamMelissa from './styles/images/team-member-melissa.jpeg';
+import teamTracy from './styles/images/team-member-tracy.jpeg';
+
 function Team() {
 	return (
 		<div className="team">
@@ -19,17 +24,17 @@ function Team() {
 
 			<section className="team__members">
 
-				<TeamMember image="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" name="Lindsay Nichol" role="Founder" />
+				<TeamMember image={teamLindsay} name="Lindsay Nichol" role="Founder" />
 
-				<TeamMember image="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" name="Laura Bohannon" role="Leading Physician" />
+				<TeamMember image={teamLaura} name="Laura Bohannon" role="Leading Physician" />
 
-				<TeamMember image="https://images.pexels.com/photos/5726783/pexels-photo-5726783.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" name="Jerald Pellham" role="Community Outreach Manager" />
+				<TeamMember image={teamJerald} name="Jerald Pellham" role="Community Outreach Manager" />
 
-				<TeamMember image="https://images.pexels.com/photos/3778602/pexels-photo-3778602.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" name="Aaron Vela" role="Fundraising Manager" />
+				<TeamMember image={teamAaron} name="Aaron Vela" role="Fundraising Manager" />
 
-				<TeamMember image="https://images.pexels.com/photos/3812742/pexels-photo-3812742.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" name="Melissa Cintron" role="Food Bank President" />
+				<TeamMember image={teamMelissa} name="Melissa Ramirez" role="Food Bank President" />
 
-				<TeamMember image="https://images.pexels.com/photos/428333/pexels-photo-428333.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" name="Tracy Bergeron" role="Health Educator" />
+				<TeamMember image={teamTracy} name="Tracy Bergeron" role="Health Educator" />
 				
 			</section>
 

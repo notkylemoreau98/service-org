@@ -1,7 +1,6 @@
 import React from 'react';
 import './styles/ServiceNav.css';
 import { Link } from 'react-router-dom';
-import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 
 function serviceNav() {
 	return (

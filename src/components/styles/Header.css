@@ -97,13 +97,24 @@
   font-size: 0.9rem;
 }
 
+.header__navLinkMobile {
+  height: 10vh;
+  width: 100%;
+  background: #21295c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  text-decoration: none;
+}
+
 .header__mobileNav button {
   cursor: pointer;
   width: 100%;
   background: #21295c;
   color: #fff;
-  border: 1px solid #000;
   outline: none;
+  border: none;
 }
 
 @media only screen and (max-width: 900px) {

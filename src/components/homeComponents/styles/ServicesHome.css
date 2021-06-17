@@ -1,0 +1,69 @@
+.servicesHome {
+  margin-top: 4rem;
+}
+
+.servicesHome > h2 {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.servicesHome__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin: 10px 3rem;
+}
+
+.servicesHome__exploreButton {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.servicesHome__exploreButton > button {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 15px 20px;
+  color: #fff;
+  background: #f9a620;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+  text-decoration: none;
+  margin: 1rem 3.5rem 3.5rem 3.5rem;
+}
+
+.servicesHome__exploreButton > button:hover {
+  background: #21295c;
+  color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  .servicesHome {
+    margin-top: 1rem;
+  }
+
+  .servicesHome > h2 {
+    font-size: 1.5rem;
+  }
+
+  .servicesHome__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .servicesHome__exploreButton {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .servicesHome {
+    height: fit-content;
+    margin-top: 3rem;
+  }
+}

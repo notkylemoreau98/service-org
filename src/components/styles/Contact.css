@@ -6,7 +6,7 @@
 .contact__titleCard {
   height: 70vh;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("https://images.pexels.com/photos/6647035/pexels-photo-6647035.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    url("./images/contact-background.jpeg");
   background-position: center;
   background-size: cover;
 }

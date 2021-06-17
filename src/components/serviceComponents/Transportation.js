@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/Transportation.css';
 import ServiceNav from './ServiceNav';
 
+import transportationImage from './styles/images/transportation.jpeg';
+
 function Transportation() {
 	return (
 		<div className="transportation">
@@ -10,7 +12,7 @@ function Transportation() {
 				<div className="transportation__container">
 
 				<div className="transportation__image">
-					<img src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Transportation Image"/>
+					<img src={transportationImage} alt="Transportation Image"/>
 				</div>
 
 				<div className="transportation__textContainer">

@@ -28,7 +28,7 @@ const useContact = (callback) => {
 		setErrors(validateInfo(values));
 		setSubmitting(true);
 
-		if(validateInfo) {
+		if(validateInfo && !errors) {
 			db.collection('contact').add({
 			name: values.name,
 			date: values.date,

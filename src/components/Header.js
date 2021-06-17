@@ -38,29 +38,41 @@ function Header() {
 
 				<nav className='header__mobileNav'>
 					<ul>
-						<button className="header__navButtons">
-							<Link to="/" className="header__navLink"><li>Home</li></Link>
-						</button>
+							<Link to="/" className="header__navLinkMobile">
+								<button className="header__navButtons">
+									<li>Home</li>
+								</button>	
+							</Link>
 
-						<button className="header__navButtons">
-							<Link to="/services" className="header__navLink"><li>Services</li></Link>
-						</button>
+							<Link to="/services" className="header__navLinkMobile">
+								<button className="header__navButtons">
+									<li>Services</li>
+								</button>
+							</Link>
 
-							<button className="header__navButtons">
-									<Link to="/about" className="header__navLink"><li>About</li></Link>
-							</button>
+							<Link to="/about" className="header__navLinkMobile">
+								<button className="header__navButtons">
+									<li>About</li>
+								</button>	
+							</Link>
 
-							<button className="header__navButtons">
-								<Link to="/team" className="header__navLink"><li>Team</li></Link>
-							</button>
+							<Link to="/team" className="header__navLinkMobile">
+								<button className="header__navButtons">
+									<li>Team</li>	
+								</button>
+							</Link>
 
-							<button className="header__navButtons">
-								<Link to="/contact" className="header__navLink"><li>Contact</li></Link>
-							</button>
+								<Link to="/contact" className="header__navLinkMobile">
+									<button className="header__navButtons">
+										<li>Contact</li>	
+									</button>
+								</Link>
 
-							<button className="header__navButtons">
-								<Link to="#" className="header__navLink"><li onClick={showModal}>Donations</li></Link>
-							</button>
+								<Link to="#" className="header__navLinkMobile" onClick={showModal}>
+									<button className="header__navButtons">
+										<li>Donate</li>
+									</button>
+								</Link>
 
 						<Elements stripe={promise}>
 							<Modal modal={modal} setModal={setModal} />

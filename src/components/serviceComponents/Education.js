@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/Education.css';
 import ServiceNav from './ServiceNav';
 
+import educationImage from './styles/images/education.jpeg';
+
 function Education() {
 	return (
 		<div className="education">
@@ -10,7 +12,7 @@ function Education() {
 				<div className="education__container">
 
 				<div className="education__image">
-					<img src="https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Education Image"/>
+					<img src={educationImage} alt="Education Image"/>
 				</div>
 
 				<div className="education__textContainer">

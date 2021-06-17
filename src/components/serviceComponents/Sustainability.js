@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/Sustainability.css';
 import ServiceNav from './ServiceNav';
 
+import sustainabilityImage from './styles/images/sustainability.jpg';
+
 function Sustainability() {
 	return (
 		<div className="sustainability">
@@ -10,7 +12,7 @@ function Sustainability() {
 			<div className="sustainability__container">
 
 				<div className="sustainability__image">
-					<img src="https://images.pexels.com/photos/5808/food-healthy-vegetables-village.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Sustainability Image"/>
+					<img src={sustainabilityImage} alt="Sustainability Image"/>
 				</div>
 
 				<div className="sustainability__textContainer">

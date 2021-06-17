@@ -1,5 +1,8 @@
 import React from 'react';
-import './styles/About.css'
+import './styles/About.css';
+
+import globalDoctorImage from './styles/images/about-doctor.jpeg';
+import groupImage from './styles/images/about-group.jpeg';
 
 function About() {
 	return (
@@ -14,7 +17,7 @@ function About() {
 			<section className="about__topContainer">
 
 				<div className="about__topContainerImage">
-					<img src="https://images.pexels.com/photos/408503/pexels-photo-408503.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+					<img src={globalDoctorImage} alt="Global Doctor" />
 				</div>
 
 				<div className="about__topContainerText">
@@ -51,7 +54,7 @@ function About() {
 			</div>
 				
 				<div className="about__bottomContainerImage">
-					<img src="https://images.pexels.com/photos/6646768/pexels-photo-6646768.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""/>
+					<img src={groupImage} alt="Group Image"/>
 				</div>
 			</section>
 

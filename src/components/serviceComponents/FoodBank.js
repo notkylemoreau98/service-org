@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/FoodBank.css';
 import ServiceNav from './ServiceNav';
 
+import foodBankImage from './styles/images/foodBank.jpeg';
+
 function FoodBank() {
 	return (
 		<div className="foodBank">
@@ -10,7 +12,7 @@ function FoodBank() {
 			<div className="foodBank__container">
 
 				<div className="foodBank__image">
-					<img src="https://images.pexels.com/photos/890507/pexels-photo-890507.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Food Bank Image"/>
+					<img src={foodBankImage} alt="Food Bank Image"/>
 				</div>
 
 				<div className="foodBank__textContainer">

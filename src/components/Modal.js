@@ -30,9 +30,10 @@ export const Modal = ({modal, setModal}) => {
 			setClientSecret(response.data.clientSecret);
 		};
 
-		getClientSecret();
-		console.log(clientSecret);
-
+		if(modal) {
+				getClientSecret();
+				console.log(clientSecret)
+		}
 	}, [donationAmount])
 
 	
@@ -42,10 +43,12 @@ export const Modal = ({modal, setModal}) => {
 		}
 	};
 
-	const setDontationValue = (e) => {
+	const setDonationValue = (e) => {
 		 if (e.target.value.length > 6) {
      e.target.value = e.target.value.slice(0,6); 
-    }
+    } else if (e.target.value < 0) {
+					setDonationAmount(0);
+				}
 			
 				setDonationAmount(e.target.value);
 	}
@@ -95,7 +98,7 @@ export const Modal = ({modal, setModal}) => {
 							<form onSubmit={handleSubmit} className="modal__contentForm">
 								<input type="text" placeholder="Name" />
 								<input type="email" placeholder="Email" />
-								<input type="number" onChange={setDontationValue} placeholder="Donation Amount" />
+								<input type="number" onChange={setDonationValue} placeholder="Donation Amount" />
 								
 								<CardElement onChange={handleChange} className="modal__cardElement" />
 

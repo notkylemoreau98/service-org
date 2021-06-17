@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/Vaccines.css';
 import ServiceNav from './ServiceNav';
 
+import vaccineImage from './styles/images/vaccine.jpeg';
+
 function Vaccines() {
 	return (
 		<div className="vaccines">
@@ -10,7 +12,7 @@ function Vaccines() {
 				<div className="vaccines__container">
 
 				<div className="vaccines__image">
-					<img src="https://images.pexels.com/photos/3825529/pexels-photo-3825529.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Vaccine Image"/>
+					<img src={vaccineImage} alt="Vaccine Image"/>
 				</div>
 
 				<div className="vaccines__textContainer">
