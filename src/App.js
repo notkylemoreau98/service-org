@@ -34,42 +34,42 @@ function App() {
             <Footer />
           </Route>
         
-
-          <Route path="/foodBank">
-            <Header />
-            <FoodBank />
-            <Footer />
-          </Route>
-        
-          <Route path="/clinics">
-            <Header />
-            <Clinics />
-            <Footer />
-          </Route>
-        
-          <Route path="/sustainability">
-            <Header />
-            <Sustainability />
-            <Footer />
-          </Route>
-        
-          <Route path="/vaccines">
-            <Header />
-            <Vaccines />
-            <Footer />
-          </Route>
-        
-          <Route path="/education">
-            <Header />
-            <Education />
-            <Footer />
-          </Route>
-        
-          <Route path="/transportation">
-            <Header />
-            <Transportation />
-            <Footer />
-          </Route>
+            {/* Service components */}
+            <Route path="/foodBank">
+              <Header />
+              <FoodBank />
+              <Footer />
+            </Route>
+          
+            <Route path="/clinics">
+              <Header />
+              <Clinics />
+              <Footer />
+            </Route>
+          
+            <Route path="/sustainability">
+              <Header />
+              <Sustainability />
+              <Footer />
+            </Route>
+          
+            <Route path="/vaccines">
+              <Header />
+              <Vaccines />
+              <Footer />
+            </Route>
+          
+            <Route path="/education">
+              <Header />
+              <Education />
+              <Footer />
+            </Route>
+          
+            <Route path="/transportation">
+              <Header />
+              <Transportation />
+              <Footer />
+            </Route>
         
           <Route path="/about">
             <Header />

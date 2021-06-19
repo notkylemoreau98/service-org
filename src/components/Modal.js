@@ -4,6 +4,7 @@ import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import { useHistory } from 'react-router-dom';
 import axios from './axios'
 import CurrencyFormat from 'react-currency-format';
+import modalImage from './styles/images/modal.jpeg';
 
 
 export const Modal = ({modal, setModal}) => {
@@ -20,13 +21,13 @@ export const Modal = ({modal, setModal}) => {
 	const stripe = useStripe();	
 	const elements = useElements();
 
+
 	useEffect(() => {
 		const getClientSecret = async () => {
 			const response = await axios({
 				method: 'post',
 				url: `/payments/create?total=${donationAmount * 100}`
-			});
-
+			})
 			setClientSecret(response.data.clientSecret);
 		};
 
@@ -36,10 +37,19 @@ export const Modal = ({modal, setModal}) => {
 		}
 	}, [donationAmount])
 
-	
-	const closeModal = (e) => {
-		if(modalRef.current === e.target) {
-			setModal(false);
+
+	const closeModal = (e) => modalRef.current === e.target ? setModal(false) : '';
+
+	const debounce = (func, timer) => {
+		let timeId = null;
+		return (...args) => {
+			if(timeId) {
+				clearTimeout(timeId)
+			}
+
+			timeId = setTimeout(() => {
+				func(...args);
+			}, timer);
 		}
 	};
 
@@ -49,9 +59,9 @@ export const Modal = ({modal, setModal}) => {
     } else if (e.target.value < 0) {
 					setDonationAmount(0);
 				}
-			
+
 				setDonationAmount(e.target.value);
-	}
+	};
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -62,7 +72,6 @@ export const Modal = ({modal, setModal}) => {
 				card: elements.getElement(CardElement)
 			}
 			}).then(() => {
-
 				setSucceeded(true);
 				setError(null);
 				setProcessing(false);
@@ -71,7 +80,6 @@ export const Modal = ({modal, setModal}) => {
 
 				history.replace('/donationCheckout');
 			})
-
 		};
 
 	const handleChange = (e) => {
@@ -88,7 +96,7 @@ export const Modal = ({modal, setModal}) => {
 					<div className="modal">
 
 						<div className="modal__image">
-							<img src="https://images.pexels.com/photos/6794206/pexels-photo-6794206.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""/>
+							<img src={modalImage} alt="Woman holding child"/>
 						</div>
 
 						<div className="modal__content">
@@ -98,7 +106,7 @@ export const Modal = ({modal, setModal}) => {
 							<form onSubmit={handleSubmit} className="modal__contentForm">
 								<input type="text" placeholder="Name" />
 								<input type="email" placeholder="Email" />
-								<input type="number" onChange={setDonationValue} placeholder="Donation Amount" />
+								<input type="number" onChange={debounce(setDonationValue, 1000)} placeholder="Donation Amount" />
 								
 								<CardElement onChange={handleChange} className="modal__cardElement" />
 

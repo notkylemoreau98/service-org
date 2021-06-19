@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { db } from './firebase';
 import validateInfo from './validateInfo';
 
-const useContact = (callback) => {
+const useContact = () => {
 	const [values, setValues] = useState({
 		name: '',
 		date: '',
@@ -18,17 +18,19 @@ const useContact = (callback) => {
 		const{ name, value } = e.target
 		setValues({
 			...values,
-			[name]: value,
+			[name]: value
 		})
 	}
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		setErrors({});
 
 		setErrors(validateInfo(values));
+		console.log(errors);
 		setSubmitting(true);
 
-		if(validateInfo && !errors) {
+		if(submitting && Object.keys(errors).length === 0 && values.name ) {
 			db.collection('contact').add({
 			name: values.name,
 			date: values.date,
@@ -47,13 +49,7 @@ const useContact = (callback) => {
 		}
 	};
 
-	useEffect(() => {
-		if(Object.keys(errors).length === 0 && submitting) {
-			callback();
-		}
-	}, [errors]);
-
-	return {handleChange, handleSubmit, values, errors};
+	return {handleChange, handleSubmit, values, errors };
 }
 
 export default useContact;

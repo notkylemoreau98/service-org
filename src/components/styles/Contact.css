@@ -59,6 +59,11 @@
   padding-bottom: 10px;
 }
 
+.contact__formItem > label > span {
+  opacity: 0.45;
+  font-size: 0.9rem;
+}
+
 .contact__formItem > input {
   height: 40px;
   border-radius: 5px;

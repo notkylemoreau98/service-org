@@ -47,7 +47,7 @@ function ContactHome() {
 						</div>
 
 						<div className="contactHome__formField">
-							<label>Phone Number</label>
+							<label>Phone Number <span>(XXX XXX XXXX)</span></label>
 							<input 
 								type="tel"
 								name="phone"

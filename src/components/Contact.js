@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './styles/Contact.css';
 import useContact from './useContact';
 import validateInfo from './validateInfo';
@@ -7,7 +7,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 
 function Contact() {
-	const { handleChange, handleSubmit, errors, values } = useContact(validateInfo);
+	const { handleChange, handleSubmit, errors, values} = useContact(validateInfo);
 
 	return (
 		<div className="contact">
@@ -63,7 +63,7 @@ function Contact() {
 							</div>
 
 							<div className="contact__formItem">
-								<label>Phone Number</label>
+								<label>Phone Number <span>(XXX XXX XXXX)</span></label>
 								<input 
 									type="tel"
 									name="phone" 
@@ -82,7 +82,7 @@ function Contact() {
 								/>
 							</div>
 
-							<button type="submit" onClick={handleSubmit} className="contact__formButton">Submit</button>
+							<button type="submit" onSubmit={handleSubmit} className="contact__formButton">Submit</button>
 
 						</form>
 					</div>
@@ -106,7 +106,6 @@ function Contact() {
 							<PhoneIcon className="contact__subtitleIcon" />
 							<p>(713)-207-1447</p>
 						</div>
-
 					</div>
 
 					<div className="contact__infoItem">
@@ -116,7 +115,7 @@ function Contact() {
 							<p>partnersinhealth@pih.org</p>
 						</div>
 					</div>
-					
+
 				</section>
 
 			</section>

@@ -22,7 +22,7 @@ function About() {
 
 				<div className="about__topContainerText">
 					<div className="about__textContent">
-						<h2>We push health forward</h2>
+						<h2>We Push Health Forward</h2>
 						<p>Here at Partners in Health, we dedicate our lives to fighting for the rights of the poor. Millions of deaths each year are a cause of preventable disease and we work tirelessly to provide world-class healthcare for those in the poorest parts of the world. Through the generous contributions of our donors, we are able to set up health care facilities and programs that can be used by communities for generations. Join us today in our mission of creating a healthy world for all.</p>
 					</div>
 

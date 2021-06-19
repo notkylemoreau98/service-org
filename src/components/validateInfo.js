@@ -1,6 +1,6 @@
-
 export default function validateInfo(values) {
-	let errors = {}
+	let errors = {};
+	console.log(values);
 
 	if(!values.name.trim()) {
 		errors.name = "Name required"
@@ -18,9 +18,8 @@ export default function validateInfo(values) {
 
 	if(!values.phone) {
 		errors.phone = "Phone number required"
-	} else if(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/i.test(values.phone)) {
+	} else if(!/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/i.test(values.phone)) {
 		errors.phone = "Phone number is invalid"
 	}
-
 	return errors;
 }
