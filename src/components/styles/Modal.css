@@ -13,7 +13,7 @@
 
 .modal {
   width: 800px;
-  height: 500px;
+  height: 475px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   background: #f7f7f7;
   color: #21295c;
@@ -41,13 +41,13 @@
 
 .modal__image > img {
   width: 400px;
-  height: 500px;
-  border-radius: 5px;
+  height: 475px;
+  border-radius: 5px 0 0 5px;
   background: #21295c;
 }
 
 .modal__content {
-  padding-top: 3rem;
+  margin-top: 1rem;
   flex: 0.5;
   padding: 20px 1rem;
 }
@@ -95,6 +95,10 @@
 
   .modal__close {
     font-size: 1.25rem;
+  }
+
+  .modal__content {
+    margin-top: 0;
   }
 
   .modal__content > h1 {

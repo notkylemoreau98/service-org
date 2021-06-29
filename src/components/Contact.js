@@ -63,7 +63,7 @@ function Contact() {
 							</div>
 
 							<div className="contact__formItem">
-								<label>Phone Number <span>(XXX XXX XXXX)</span></label>
+								<label>Phone Number</label>
 								<input 
 									type="tel"
 									name="phone" 

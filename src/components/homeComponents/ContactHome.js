@@ -47,7 +47,7 @@ function ContactHome() {
 						</div>
 
 						<div className="contactHome__formField">
-							<label>Phone Number <span>(XXX XXX XXXX)</span></label>
+							<label>Phone Number</label>
 							<input 
 								type="tel"
 								name="phone"
@@ -67,7 +67,7 @@ function ContactHome() {
 								/>
 						</div>
 
-						<button onClick={handleSubmit} className="contactHome__formButton" type="submit">Send</button>
+						<button className="contactHome__formButton" type="submit">Send</button>
 
 					</form>
 				</div>

@@ -8,10 +8,6 @@ const app = express();
 app.use(cors({ origin: true }));
 app.use(express.json());
 
-exports.handler = ((req, res) => {
-    res.set({ 'Access-Control-Allow-Origin': '*' }).sendStatus(200)
-})
-
 app.get('/', (request, response) => response.status(200).send('Partners in Health'));
 
 app.post('/payments/create', async (request, response) => {
@@ -30,3 +26,6 @@ app.post('/payments/create', async (request, response) => {
 });
 
 exports.api = functions.https.onRequest(app);
+
+// Cookie Warnings (Issue with the firebase functions)
+// Upon doing research, I learned that there is nothing you can do until Google developers/admins (and developers/admins of other external resources) modify their scripts/servers to include the necessary cookies settings to the cookies they generate when your website includes them. 

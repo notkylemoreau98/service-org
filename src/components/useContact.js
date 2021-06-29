@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { db } from './firebase';
 import validateInfo from './validateInfo';
 
@@ -24,13 +24,14 @@ const useContact = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		setErrors({});
+
+		if (Object.keys(errors).length > 0) { setErrors({}) }; // Resets errors after info changed to validate again
 
 		setErrors(validateInfo(values));
 		console.log(errors);
 		setSubmitting(true);
 
-		if(submitting && Object.keys(errors).length === 0 && values.name ) {
+		if(submitting && Object.keys(errors).length === 0 && values.name ) { //Added name to prevent empty submissions
 			db.collection('contact').add({
 			name: values.name,
 			date: values.date,
