@@ -29,11 +29,11 @@ export const Modal = ({modal, setModal}) => {
 				url: `/payments/create?total=${donationAmount * 100}`
 			})
 			setClientSecret(response.data.clientSecret);
+			console.log(clientSecret)
 		};
 
 		if(modal) {
 				getClientSecret();
-				console.log(clientSecret)
 		}
 	}, [donationAmount])
 
