@@ -15,7 +15,7 @@ const useContact = () => {
 	const [submitting, setSubmitting] = useState(false);
 
 	const handleChange = (e) => {
-		const{ name, value } = e.target
+		const { name, value } = e.target
 		setValues({
 			...values,
 			[name]: value
@@ -28,7 +28,7 @@ const useContact = () => {
 		if (Object.keys(errors).length > 0) { setErrors({}) }; // Resets errors after info changed to validate again
 
 		setErrors(validateInfo(values));
-		console.log(errors);
+		// console.log(errors);
 		setSubmitting(true);
 
 		if(submitting && Object.keys(errors).length === 0 && values.name ) { //Added name to prevent empty submissions
